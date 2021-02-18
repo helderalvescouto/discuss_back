@@ -7,5 +7,5 @@ defmodule DiscussWeb.TopicController do
     IO.puts("===========")
     IO.inspect(params)
     IO.puts("===========")
-  end 
+  end
 end
