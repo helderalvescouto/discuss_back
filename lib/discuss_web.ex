@@ -10,6 +10,19 @@ defmodule DiscussWeb do
     end
   end
 
+  def model do
+    quote do
+      use Ecto.Schema
+
+      import Ecto
+      import Ecto.Changeset
+      import Ecto.Query
+    end
+  end
+
+  @spec view ::
+          {:__block__, [],
+           [{:__block__, [], [...]} | {:import, [...], [...]} | {:use, [...], [...]}, ...]}
   def view do
     quote do
       use Phoenix.View,

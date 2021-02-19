@@ -1,10 +1,24 @@
-/_build
-/cover
-/deps
-/doc
+# The directory Mix will write compiled artifacts to.
+/_build/
+/cover/
+/deps/
+/doc/
 /.fetch
 erl_crash.dump
 *.ez
 *.beam
+
+npm-debug.log
+/assets/node_modules/
+
+/priv/static/
 /config/*.secret.exs
 .elixir_ls/
+
+# Dialyzer
+/priv/plts/*.plt
+/priv/plts/*.plt.hash
+# Sobelow
+.sobelow
+.deliver/releases/
+.log
