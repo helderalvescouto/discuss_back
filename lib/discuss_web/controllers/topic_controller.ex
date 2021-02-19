@@ -1,11 +1,9 @@
 defmodule DiscussWeb.TopicController do
   use DiscussWeb, :controller
 
-  alias DiscussWeb.Topic
+  alias DiscussWeb.TopicModel
 
   def new(conn, params) do
-    struct = %Topic{}
-    params = %{}
-    changeset = Topic.changeset(struct, params)
+    changeset = TopicModel.changeset(%TopicModel{}, %{})
   end
 end
